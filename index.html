@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Saundpro_official — Магазин</title>
+    <meta name="description" content="Официальный магазин Saundpro_official">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Фоновое свечение -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Навигация -->
+    <header class="header">
+        <a href="#" class="logo">
+            <span class="logo-icon">S</span>
+            <span>Saundpro<span class="accent">_official</span></span>
+        </a>
+
+        <nav class="nav">
+            <a href="#shop">Магазин</a>
+            <a href="#about">О нас</a>
+            <a href="#discord">Discord</a>
+        </nav>
+
+        <a class="discord-mini"
+           href="https://discord.gg/YOUR_SERVER"
+           target="_blank"
+           rel="noopener">
+            Discord
+        </a>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Официальный магазин
+                </div>
+
+                <h1>
+                    SAUNDPRO
+                    <span>_OFFICIAL</span>
+                </h1>
+
+                <p>
+                    Добро пожаловать в официальный магазин.
+                    Выбирай нужный товар и оформляй заказ через Discord.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#shop" class="button primary">
+                        Смотреть товары
+                        <span>→</span>
+                    </a>
+
+                    <a href="https://discord.gg/YOUR_SERVER"
+                       target="_blank"
+                       rel="noopener"
+                       class="button secondary">
+                        <span>◉</span>
+                        Наш Discord
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-card-top">
+                    <span>SAUNDPRO</span>
+                    <span class="live">● ONLINE</span>
+                </div>
+
+                <div class="hero-symbol">S</div>
+
+                <div class="hero-card-bottom">
+                    <span>OFFICIAL STORE</span>
+                    <span>2026</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Преимущества -->
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>
+                    <h3>Быстро</h3>
+                    <p>Быстрое оформление заказа</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <div>
+                    <h3>Надёжно</h3>
+                    <p>Поддержка через Discord</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💎</div>
+                <div>
+                    <h3>Качественно</h3>
+                    <p>Только актуальные товары</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Магазин -->
+        <section class="shop" id="shop">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">STORE</span>
+                    <h2>Наши товары</h2>
+                </div>
+
+                <p>
+                    Выбери товар и нажми
+                    <strong>«Заказать»</strong>.
+                </p>
+            </div>
+
+            <div class="products">
+
+                <!-- Товар 1 -->
+                <article class="product-card">
+                    <div class="product-image image-one">
+                        <span class="product-badge">POPULAR</span>
+                        <div class="product-letter">S</div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">PREMIUM</span>
+                        <h3>Premium Pack</h3>
+                        <p>
+                            Премиальный набор от Saundpro_official.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>€10</strong>
+
+                            <button class="order-button"
+                                    onclick="orderProduct('Premium Pack')">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 2 -->
+                <article class="product-card">
+                    <div class="product-image image-two">
+                        <span class="product-badge">NEW</span>
+                        <div class="product-letter">SP</div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">SPECIAL</span>
+                        <h3>Special Pack</h3>
+                        <p>
+                            Специальный набор для наших клиентов.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>€20</strong>
+
+                            <button class="order-button"
+                                    onclick="orderProduct('Special Pack')">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 3 -->
+                <article class="product-card">
+                    <div class="product-image image-three">
+                        <div class="product-letter">★</div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">VIP</span>
+                        <h3>VIP Pack</h3>
+                        <p>
+                            Максимальный набор возможностей.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>€35</strong>
+
+                            <button class="order-button"
+                                    onclick="orderProduct('VIP Pack')">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="about" id="about">
+
+            <div class="about-number">01</div>
+
+            <div class="about-content">
+                <span class="section-label">ABOUT US</span>
+
+                <h2>
+                    Больше чем просто
+                    <span>магазин.</span>
+                </h2>
+
+                <p>
+                    Saundpro_official — это место, где ты можешь
+                    быстро выбрать нужный товар и связаться с нами
+                    через Discord.
+                </p>
+
+                <div class="stats">
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Discord</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Поддержка</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Возможностей</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Discord -->
+        <section class="discord-section" id="discord">
+
+            <div class="discord-content">
+                <span class="section-label">COMMUNITY</span>
+
+                <h2>
+                    Присоединяйся
+                    <span>к нам.</span>
+                </h2>
+
+                <p>
+                    Получай новости, задавай вопросы,
+                    оформляй заказы и общайся с сообществом
+                    в нашем Discord.
+                </p>
+
+                <a href="https://discord.gg/YOUR_SERVER"
+                   target="_blank"
+                   rel="noopener"
+                   class="discord-button">
+                    <span class="discord-icon">◉</span>
+                    Войти на Discord сервер
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="discord-decoration">
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+                <div class="discord-symbol">S</div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <span class="logo-icon">S</span>
+            <span>Saundpro<span class="accent">_official</span></span>
+        </div>
+
+        <p>© 2026 Saundpro_official. Все права защищены.</p>
+
+        <a href="https://discord.gg/YOUR_SERVER"
+           target="_blank"
+           rel="noopener">
+            Discord →
+        </a>
+
+    </footer>
+
+    <!-- Уведомление -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">✓</div>
+        <div>
+            <strong>Товар выбран</strong>
+            <span>Переходим в Discord...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+      </html>
